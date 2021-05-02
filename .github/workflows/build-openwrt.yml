@@ -126,6 +126,14 @@ jobs:
       run: |
         cd openwrt/bin/targets/*/*
         rm -rf packages
+        rm openwrt-bcm53xx-generic-asus*
+        rm openwrt-bcm53xx-generic-buffalo*
+        rm openwrt-bcm53xx-generic-luxul*
+        rm openwrt-bcm53xx-generic-netgear*
+        rm openwrt-bcm53xx-generic-dlink*
+        rm openwrt-bcm53xx-generic-linksys*
+        rm openwrt-bcm53xx-generic-smartrg*
+        rm openwrt-bcm53xx-generic-tenda*
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "::set-output name=status::success"
 
